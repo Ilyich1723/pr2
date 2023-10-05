@@ -1,20 +1,20 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../models/product/product.dart';
+
 part 'getProd.freezed.dart';
 part 'getProd.g.dart';
 
 @freezed
-class getProdwith _$getProd{
+class Car with _$Car {
 
-  factory getProd({
+  factory Car({
 
-@JsonKey(name:"cars") @Default([]) List<Product> p,
-    @Default(0) int total,
-    @Default(0) int skip,
-    @Default(0) int limit,
+@JsonKey(name:"cars") @Default([]) List<Car> p,
+   
 
-  }) = _getProd;
+  }) = _Car;
 
-  factory getProd.fromJson(Map<String, dynamic> json) => _$getProdFromJson(json);
+  factory Car.fromJson(Map<String, dynamic> json) => _$CarFromJson(json);
 }
-Product object = Product();
+Car object = Car();

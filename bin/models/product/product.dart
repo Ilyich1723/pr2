@@ -4,9 +4,9 @@ part 'product.freezed.dart';
 part 'product.g.dart';
 
 @freezed
-class Product with _$Product {
+class Car with _$Car {
 
-  factory Product({
+  factory Car({
     @Default(0) int id,
     required String car,
     required String car_model,
@@ -14,12 +14,13 @@ class Product with _$Product {
     @Default(0) int car_model_year,
     required String car_vin,
     required String price,
-    bool availability,
+   
     
 
 
 
-  }) = _Product;
+  }) = _Car;
 
-  factory Product.fromJson(Map<String, dynamic> json) => _$ProductFromJson(json);
+  factory Car.fromJson(Map<String, dynamic> json) => _$Car(json);
 }
+s
